@@ -1,0 +1,48 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.list-group {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin: auto;
+}
+
+.panel {
+    margin: auto;
+    width: 95%; /* or whatever width for your table*/
+}
+
+.panel-heading {
+    text-align: center;
+    font-weight: bold;
+}
+
+.table {
+    display: table;
+}
+
+.small_field {
+    padding: 0px 2px; /* just some padding, if needed*/
+    white-space: pre; /* this will avoid line breaks*/
+    text-align: center;
+}
+
+.big_field {
+    width: 30%;
+    text-align: center;
+    white-space: pre; /* this will avoid line breaks*/
+}
+
+.glyphicon-remove {
+    color: darkred;
+}

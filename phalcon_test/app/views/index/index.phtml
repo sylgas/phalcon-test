@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PhalconDemo</title>
+    <div class=" page-header" style="text-align: center; color: slategrey">
+        <h1><a style="text-decoration: none" href="/phalcon_test">PhalconDemo</a></h1>
+    </div>
+    <?php $this->assets->outputCss() ?>
+</head>
+<body>
+<ul class="list-group">
+    <li class="list-group-item">
+        <span class="glyphicon glyphicon-search"></span>
+        <a href="person_list">CallPerson List</a>
+    </li>
+    <li class="list-group-item">
+        <span class="glyphicon glyphicon-plus"></span>
+        <a href="create_person">Create Person</a></li>
+</ul>
+<?php $this->assets->outputJs() ?>
+</body>
+</html>

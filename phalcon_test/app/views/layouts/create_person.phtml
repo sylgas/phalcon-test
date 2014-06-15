@@ -1,0 +1,38 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Create Person</title>
+    <?php $this->assets->outputCss() ?>
+    <div class=" page-header" style="text-align: center; color: slategrey">
+        <h1><a style="text-decoration: none" href="/phalcon_test">PhalconDemo</a></h1>
+    </div>
+</head>
+
+<body ng-app="phalcon_test.create_person">
+<div class="content" ng-controller="CreateController">
+    <div class="create_form" style="width:400px; margin: 0 auto">
+        <h1>Create CallPerson</h1>
+
+        <div class="required-field-block">
+            <input type="text" placeholder="First Name" ng-model="newPerson.firstname" class="form-control">
+
+            <div class="required-icon">
+                <div class="text">*</div>
+            </div>
+        </div>
+
+        <div class="required-field-block">
+            <input type="text" ng-model="newPerson.lastname" placeholder="Last Name" class="form-control">
+
+            <div class="required-icon">
+                <div class="text">*</div>
+            </div>
+        </div>
+            <input type="submit" value="Save" ng-click="save()" class="active btn btn-primary">
+            <p ng-repeat="name in errors" class="alert alert-danger"><strong>{{ name }}</strong></p>
+    </div>
+</div>
+<?php $this->assets->outputJs() ?>
+</body>
+</html>
